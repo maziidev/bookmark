@@ -6,8 +6,6 @@ const menu = document.getElementById("menu");
 
 const logo = document.getElementById("logo");
 
-const items = menu.querySelectorAll("a");
-
 // tabs menu event listener
 tabs.forEach((tab) => tab.addEventListener("click", onTabClick));
 
@@ -48,14 +46,4 @@ function navToggle() {
   btn.classList.toggle("open");
   menu.classList.toggle("flex");
   menu.classList.toggle("hidden");
-
-  // items.forEach((item) => {
-  //   item.addEventListener("click", () => {
-  //     menu.classList.toogle("hidden");
-  //     menu.classList.toogle("flex");
-  //     // btn.classList.toggle("open");
-  //     // menu.classList.remove("flex");
-  //     // menu.classList.remove("hidden");
-  //   });
-  // });
 }
